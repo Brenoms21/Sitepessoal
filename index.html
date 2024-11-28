@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        nav {
+            background-color: #4b0082;
+        }
+        nav a {
+            color: #fff !important;
+        }
+        header {
+            background: linear-gradient(45deg, #6a5acd, #4b0082);
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #6a5acd;
+            border-color: #6a5acd;
+        }
+        .btn-primary:hover {
+            background-color: #4b0082;
+        }
+        .card {
+            margin: 10px auto;
+        }
+        .card-img-top {
+            max-height: 150px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: #4b0082;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .card-img-container {
+    display: flex; /* Garante alinhamento */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 150%; /* Largura do contêiner */
+    height: 150px; /* Altura definida para o contêiner */
+    overflow: hidden; /* Corta imagens que ultrapassarem os limites */
+    border-radius: 50%; /* Deixa a imagem circular */
+    background-color: #f0f0f0; /* Cor de fundo (opcional) */
+}
+
+/* Contêiner externo que engloba o círculo */
+.card-img-container {
+    display: flex; /* Ativa flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    width: 150px; /* Define largura fixa */
+    height: 150px; /* Define altura fixa */
+    overflow: hidden; /* Garante que o excesso seja cortado */
+    border-radius: 50%; /* Deixa o formato circular */
+    background-color: #f0f0f0; /* Cor de fundo para preenchimento */
+    margin: 0 auto; /* Centraliza horizontalmente se o contêiner não for flex */
+}
+
+/* Imagem dentro do círculo */
+.card-img {
+    width: 100%; /* Ajusta a largura */
+    height: auto; /* Mantém a proporção */
+    object-fit: cover; /* Faz a imagem preencher o círculo sem distorcer */
+}
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Meu Site</a>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <p>Explore conteúdos incríveis e descubra mais sobre nossos projetos!</p>
+    </header>
+
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Mídia (1).jfif" class="card-img-container" alt="Imagem Pessoal">
+                    <div class="card-body">
+                        <h5 class="card-title">Página Pessoal</h5>
+                        <p class="card-text">Conheça mais sobre mim, minha trajetória e objetivos.</p>
+                        <a href="paginapessoal.html" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="oi.jpg" class="card-img-container" alt="IoT">
+                    <div class="card-body">
+                        <h5 class="card-title">Internet das Coisas</h5>
+                        <p class="card-text">Confira projetos e inovações no mundo da IoT.</p>
+                        <a href="paginaiot.html" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="areas-do-conhecimento.webp" class="card-img-container" alt="Áreas do Saber">
+                    <div class="card-body">
+                        <h5 class="card-title">Áreas do Saber</h5>
+                        <p class="card-text">Explore atividades realizadas em diversas áreas do conhecimento.</p>
+                        <a href="paginaareadosaber.html" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;  Meu Site - Breno Martins da Silva</p>
+    </footer>
+</body>
+</html>
+
